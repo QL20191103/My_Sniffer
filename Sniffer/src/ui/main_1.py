@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'main.myui'
 ##
-## Created by: Qt User Interface Compiler version 6.4.2
+## Created by: Qt User Interface Compiler version 6.2.4
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -91,7 +91,7 @@ class Ui_MainWindow(object):
         self.packetTable.setObjectName(u"packetTable")
         font1 = QFont()
         font1.setFamilies([u"Fira Code"])
-        font1.setPointSize(11)
+        font1.setPointSize(12)
         self.packetTable.setFont(font1)
         self.splitter.addWidget(self.packetTable)
         self.treeWidget = QTreeWidget(self.splitter)
@@ -135,27 +135,27 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"mysniffer", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Sniffer", None))
         self.actionExit.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
         self.actionAbout.setText(QCoreApplication.translate("MainWindow", u"About", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Interface:", None))
         self.startButton.setText(QCoreApplication.translate("MainWindow", u"Start", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Filter:", None))
-        self.filterEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Pleast input the BPF expression to filter packets", None))
+        self.filterEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Input BPF expression to filter packet", None))
         ___qtablewidgetitem = self.packetTable.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"No.", None));
         ___qtablewidgetitem1 = self.packetTable.horizontalHeaderItem(1)
-        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"time", None));
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Time", None));
         ___qtablewidgetitem2 = self.packetTable.horizontalHeaderItem(2)
-        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"s_port", None));
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Source", None));
         ___qtablewidgetitem3 = self.packetTable.horizontalHeaderItem(3)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"d_port", None));
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"Destination", None));
         ___qtablewidgetitem4 = self.packetTable.horizontalHeaderItem(4)
         ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Protocol", None));
         ___qtablewidgetitem5 = self.packetTable.horizontalHeaderItem(5)
-        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"Len", None));
+        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"Length", None));
         ___qtablewidgetitem6 = self.packetTable.horizontalHeaderItem(6)
-        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"informa", None));
+        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Info", None));
         self.menuFile.setTitle(QCoreApplication.translate("MainWindow", u"File", None))
         self.menuHelp.setTitle(QCoreApplication.translate("MainWindow", u"Help", None))
     # retranslateUi

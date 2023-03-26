@@ -23,7 +23,7 @@
     <item row="0" column="0">
      <widget class="QLabel" name="label">
       <property name="text">
-       <string>Interface:</string>
+       <string>Network Card:</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -33,23 +33,6 @@
     <item row="0" column="1">
      <widget class="QComboBox" name="interfaceBox"/>
     </item>
-    <item row="0" column="2">
-     <widget class="QPushButton" name="startButton">
-      <property name="text">
-       <string>Start</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string>Filter:</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-    </item>
     <item row="1" column="1">
      <widget class="QLineEdit" name="filterEdit">
       <property name="font">
@@ -57,8 +40,21 @@
         <pointsize>14</pointsize>
        </font>
       </property>
+      <property name="text">
+       <string>Please input the BPF expression to filter packets</string>
+      </property>
       <property name="placeholderText">
        <string>Pleast input the BPF expression to filter packets</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Setting Filter:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </item>
@@ -136,31 +132,14 @@
       </widget>
      </widget>
     </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="startButton">
+      <property name="text">
+       <string>Begin</string>
+      </property>
+     </widget>
+    </item>
    </layout>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>955</width>
-     <height>37</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuFile">
-    <property name="title">
-     <string>File</string>
-    </property>
-    <addaction name="actionExit"/>
-   </widget>
-   <widget class="QMenu" name="menuHelp">
-    <property name="title">
-     <string>Help</string>
-    </property>
-    <addaction name="actionAbout"/>
-   </widget>
-   <addaction name="menuFile"/>
-   <addaction name="menuHelp"/>
   </widget>
   <action name="actionExit">
    <property name="text">

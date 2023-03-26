@@ -24,7 +24,7 @@ from ui import about as about_ui
 from logger import logger
 
 DIRNAME = os.path.dirname(os.path.abspath(__file__))
-VERSION = "qinli"
+VERSION = "0.0.1"
 MAXSIZE = 1024
 LOGO = os.path.join(DIRNAME, 'images/logo.png')
 
@@ -113,12 +113,12 @@ class MainWindow(QMainWindow):
         try:
             compile_filter(filter_exp=exp)
             # 输入框背景变绿，start可以点击
-            self.myui.filterEdit.setStyleSheet('QLineEdit { background-color: rgb(25, 150, 50);}')
+            self.myui.filterEdit.setStyleSheet('QLineEdit { background-color: rgb(33, 186, 69);}')
             self.myui.startButton.setEnabled(True)
         except Exception:
             # 将输入框背景变红，start不可点击
             self.myui.startButton.setEnabled(False)
-            self.myui.filterEdit.setStyleSheet('QLineEdit { background-color: rgb(219, 78, 40);}')
+            self.myui.filterEdit.setStyleSheet('QLineEdit { background-color: rgb(219, 40, 40);}')
             return
     # 迭代package不同层之间的包，并返回
     def get_packet_layers(self, packet):
